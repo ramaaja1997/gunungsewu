@@ -14,11 +14,11 @@ public class SplashActivity extends Activity {
         Thread thread = new Thread(){
             public void run(){
                 try {
-                    sleep(2000);
+                    sleep(3500);
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
-                    startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
                     finish();
                 }
             }

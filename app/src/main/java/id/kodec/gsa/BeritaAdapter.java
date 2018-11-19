@@ -12,17 +12,17 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductViewHolder> {
+public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.ProductViewHolder> {
 
 
     //this context we will use to inflate the layout
     private Context mCtx;
 
     //we are storing all the products in a list
-    private List<Wisata> productList;
+    private List<Berita> productList;
 
     //getting the context and product list with constructor
-    public WisataAdapter(Context mCtx, List<Wisata> productList) {
+    public BeritaAdapter(Context mCtx, List<Berita> productList) {
         this.mCtx = mCtx;
         this.productList = productList;
     }
@@ -31,14 +31,14 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductVie
     public ProductViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //inflating and returning our view holder
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.layout_wisata, null);
+        View view = inflater.inflate(R.layout.layout_berita, null);
         return new ProductViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(ProductViewHolder holder, int position) {
         //getting the product of the specified position
-        Wisata product = productList.get(position);
+        Berita product = productList.get(position);
 
         //binding the data with the viewholder views
         holder.textViewTitle.setText(product.getTitle());

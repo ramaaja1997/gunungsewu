@@ -46,12 +46,13 @@
                         android:clickable="true"
                         android:id="@+id/bankcardId"
                         android:layout_width="160dp"
-                        android:layout_height="190dp"
+                        android:layout_height="120dp"
                         android:layout_margin="10dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:paddingTop="5dp"
                             android:gravity="center">
                             <ImageView
                                 android:layout_width="64dp"
@@ -64,19 +65,12 @@
                                 android:layout_height="wrap_content"
                                 android:textStyle="bold"
                                 android:layout_marginTop="10dp"
-                                android:text="Banking"/>
+                                android:text="Paket Wisata"/>
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:background="@color/lightgray"
                                 android:layout_margin="10dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Check your bank activities"
-                                android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
 
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
@@ -84,12 +78,13 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:layout_width="160dp"
-                        android:layout_height="190dp"
+                        android:layout_height="120dp"
                         android:layout_margin="10dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:paddingTop="5dp"
                             android:gravity="center">
                             <ImageView
                                 android:layout_width="64dp"
@@ -102,20 +97,12 @@
                                 android:layout_height="wrap_content"
                                 android:textStyle="bold"
                                 android:layout_marginTop="10dp"
-                                android:text="Ideas"/>
+                                android:text="Promo"/>
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:background="@color/lightgray"
                                 android:layout_margin="10dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Check your bank activities"
-                                android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
-
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
 
@@ -130,12 +117,14 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:layout_width="160dp"
-                        android:layout_height="190dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/berita"
                         android:layout_margin="10dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
+                            android:paddingTop="5dp"
                             android:gravity="center">
                             <ImageView
                                 android:layout_width="64dp"
@@ -148,33 +137,26 @@
                                 android:layout_height="wrap_content"
                                 android:textStyle="bold"
                                 android:layout_marginTop="10dp"
-                                android:text="Add"/>
+                                android:text="Berita"/>
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
                                 android:background="@color/lightgray"
                                 android:layout_margin="10dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Check your bank activities"
-                                android:padding="5dp"
-                                android:textColor="@android:color/darker_gray"/>
-
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
                     <android.support.v7.widget.CardView
                         android:foreground="?android:attr/selectableItemBackground"
                         android:clickable="true"
                         android:layout_width="160dp"
-                        android:layout_height="190dp"
+                        android:layout_height="120dp"
                         android:layout_margin="10dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
+                            android:paddingTop="5dp"
                             android:orientation="vertical">
 
                             <ImageView
@@ -188,7 +170,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Links"
+                                android:text="Tentang"
                                 android:textStyle="bold" />
 
                             <View
@@ -196,15 +178,6 @@
                                 android:layout_height="1dp"
                                 android:layout_margin="10dp"
                                 android:background="@color/lightgray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="Check your bank activities"
-                                android:textColor="@android:color/darker_gray" />
-
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
                 </LinearLayout>

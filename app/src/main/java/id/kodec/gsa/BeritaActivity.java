@@ -11,10 +11,10 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WisataActivity extends AppCompatActivity {
+public class BeritaActivity extends AppCompatActivity {
 
     //a list to store all the products
-    List<Wisata> productList;
+    List<Berita> productList;
 
     //the recyclerview
     RecyclerView recyclerView;
@@ -22,7 +22,7 @@ public class WisataActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wisata);
+        setContentView(R.layout.activity_berita);
 
         //getting the recyclerview from xml
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
@@ -35,16 +35,16 @@ public class WisataActivity extends AppCompatActivity {
 
         //adding some items to our list
         productList.add(
-                new Wisata(
+                new Berita(
                         1,
-                        "Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)",
+                        "Berita Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)",
                         "13.3 inch, Silver, 1.35 kg",
                         4.3,
                         60000,
                         R.drawable.profile));
 
         productList.add(
-                new Wisata(
+                new Berita(
                         1,
                         "Dell Inspiron 7000 Core i5 7th Gen - (8 GB/1 TB HDD/Windows 10 Home)",
                         "14 inch, Gray, 1.659 kg",
@@ -53,7 +53,7 @@ public class WisataActivity extends AppCompatActivity {
                         R.drawable.profile));
 
         productList.add(
-                new Wisata(
+                new Berita(
                         1,
                         "Microsoft Surface Pro 4 Core m3 6th Gen - (4 GB/128 GB SSD/Windows 10)",
                         "13.3 inch, Silver, 1.35 kg",
@@ -62,9 +62,10 @@ public class WisataActivity extends AppCompatActivity {
                         R.drawable.profile));
 
         //creating recyclerview adapter
-        WisataAdapter adapter = new WisataAdapter(this, productList);
+        BeritaAdapter adapter = new BeritaAdapter(this, productList);
 
         //setting adapter to recyclerview
         recyclerView.setAdapter(adapter);
+
     }
 }
