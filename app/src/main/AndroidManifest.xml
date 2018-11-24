@@ -24,7 +24,11 @@
         <activity android:name=".Paket1Activity" />
         <activity android:name=".PayPaket1Activity" />
         <activity android:name=".SelesaiActivity" />
-        <activity android:name=".BeritaActivity"></activity>
+        <activity android:name=".BeritaActivity" />
+        <activity android:name=".PromoActivity" />
+        <activity android:name=".TentangActivity" />
+        <activity android:name=".Berita1Activity" />
+        <activity android:name=".Promo1Activity"></activity>
     </application>
 
 </manifest>

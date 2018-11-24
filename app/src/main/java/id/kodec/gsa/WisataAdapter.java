@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -20,6 +21,9 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductVie
 
     //we are storing all the products in a list
     private List<Wisata> productList;
+    private RecyclerView recyclerView;
+
+
 
     //getting the context and product list with constructor
     public WisataAdapter(Context mCtx, List<Wisata> productList) {
@@ -32,6 +36,19 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductVie
         //inflating and returning our view holder
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         View view = inflater.inflate(R.layout.layout_wisata, null);
+        View view1 = inflater.inflate(R.layout.activity_wisata, null);
+        recyclerView = view1.findViewById(R.id.recyclerView);
+        final View.OnClickListener mOnClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int itemPosition = recyclerView.getChildLayoutPosition(v);
+                int item = productList.get(itemPosition).getId();
+//                Toast.makeText(mCtx, ""+item, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(mCtx, Paket1Activity.class);
+                mCtx.startActivity(intent);
+            }
+        };
+        view.setOnClickListener(mOnClickListener);
         return new ProductViewHolder(view);
     }
 
@@ -60,7 +77,6 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductVie
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewTitle, textViewShortDesc, textViewRating, textViewPrice;
-        Button pilih;
         ImageView imageView;
 
         public ProductViewHolder(View itemView) {
@@ -71,7 +87,7 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.ProductVie
             textViewRating = itemView.findViewById(R.id.textViewRating);
             textViewPrice = itemView.findViewById(R.id.textViewPrice);
             imageView = itemView.findViewById(R.id.imageView);
-            pilih = itemView.findViewById(R.id.pilih);
+
         }
     }
 }

@@ -37,8 +37,8 @@ public class BeritaActivity extends AppCompatActivity {
         productList.add(
                 new Berita(
                         1,
-                        "Berita Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)",
-                        "13.3 inch, Silver, 1.35 kg",
+                        "Geopark Dinilai Bantu Kurangi Angka Kemiskinan",
+                        "Jumat, 16 November 2018 21:21 WIB",
                         4.3,
                         60000,
                         R.drawable.profile));
@@ -46,8 +46,8 @@ public class BeritaActivity extends AppCompatActivity {
         productList.add(
                 new Berita(
                         1,
-                        "Dell Inspiron 7000 Core i5 7th Gen - (8 GB/1 TB HDD/Windows 10 Home)",
-                        "14 inch, Gray, 1.659 kg",
+                        "Sudah Tahu? Gunungkidul Punya Taman Batu yang Unik",
+                        "Kamis, 15 November 2018 09:10 WIB",
                         4.3,
                         60000,
                         R.drawable.profile));
@@ -55,8 +55,8 @@ public class BeritaActivity extends AppCompatActivity {
         productList.add(
                 new Berita(
                         1,
-                        "Microsoft Surface Pro 4 Core m3 6th Gen - (4 GB/128 GB SSD/Windows 10)",
-                        "13.3 inch, Silver, 1.35 kg",
+                        "Jembatan Gantung Pulau Kalong yang Bikin Deg-degan",
+                        "Rabu, 14 November 2018 12:10 WIB",
                         4.3,
                         60000,
                         R.drawable.profile));

@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         bankcardid = findViewById(R.id.bankcardId);
         berita = findViewById(R.id.berita);
+        promo = findViewById(R.id.promo);
+        tentang = findViewById(R.id.tentang);
 
         bankcardid.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +46,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BeritaActivity.class));
             }
         });
-
+        promo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PromoActivity.class));
+            }
+        });
+        tentang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TentangActivity.class));
+            }
+        });
     }
 
     ImageListener imageListener = new ImageListener() {
